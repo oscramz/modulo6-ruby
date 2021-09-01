@@ -60,9 +60,12 @@ puts "Por favor ingrese los montos vendidos"
 while monto != -1
 
     monto = gets.chomp.to_i
-    total = total + monto
-    puts "Ingrese otro monto"
-
+    if monto != Integer
+        puts "No es un número válido"
+    else
+        total = total + monto
+        puts "Ingrese otro monto"
+    end
 end
 if monto == -1
 puts "El total vendido fue #{total + 1}"
