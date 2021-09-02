@@ -84,9 +84,9 @@ Ejemplo vida = 500 => Ataques totales para matar a monstruo de 500 HP | 8 pares 
 times | for | rangos
 Crear un archivo dentro de la carpeta ejercicio1 llamado ejercicios_for.rb para realizar los siguientes ejercicios
 
-Imprimiendo pares e impares. 🐯🐱
+Ej 1 Imprimiendo pares e impares. 🐯🐱
 
-Permitir ingresar un número n al usuario. Si n es par, deberá mostrar una secuenta de números pares hasta n separados por _; si es n es un número impar deberá mostrar una secuencia de números impares hasta n separados por $
+Permitir ingresar un número n al usuario. Si n es par, deberá mostrar una secuenta de números pares hasta n separados por _; si n es un número impar deberá mostrar una secuencia de números impares hasta n separados por $
 
 Ejemplo
 
@@ -94,7 +94,7 @@ n = 10 => 0_2_4_6_8_10
 
 n = 11 => 1$3$5$7$9$11
 
-Sorteos para una rifa 🎁
+Ej 2 Sorteos para una rifa 🎁
 
 Un usuario necesita genera una cantidad de números al azar para poder realizar un sorteo. Solicitar al usuario que ingrese los números mínimos y máximos para realizar el sorteo, además de la cantidad que desea generar. Al final mostrar en pantalla de forma ordenada la cantidad de números al azar que solicitó dentro del rango que pidió.
 
@@ -112,7 +112,7 @@ cant = 3
 
 => Sorteo N°3: 5
 
-Factorial de un número 👓
+Ej 3 Factorial de un número 👓
 
 Dado un número n por el usuario, obtener el factorial del número e imprimirlo en consola mostrando toda la operación.
 
