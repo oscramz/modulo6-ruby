@@ -70,6 +70,3 @@ end
 if monto == -1
 puts "El total vendido fue #{total + 1}"
 end
-
-
-
