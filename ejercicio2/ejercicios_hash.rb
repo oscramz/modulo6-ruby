@@ -1,0 +1,10 @@
+equipo1 = { nombre:     'argentina',    estadio: 'Estadio Único de Santiago del Estero' }
+equipo2 = { nombre:     'bolivia',      estado: 'Estadio Hernando Siles' }
+equipo3 = { nombre:     'brasil',       estadio: 'Estadio José Pinheiro Borda' }
+equipo4 = { nombre:     'chile',        estado: 'Estadio Monumental Chile' }
+equipo5 = { nombre:     'colombia',     estadio: 'Estadio Metropolitano Roberto Meléndez' }
+equipo6 = { nombre:     'ecuador',      estado: 'Estadio Rodriguez Paz Delgado' }
+equipo7 = { nombre:     'paraguay',     estadio: 'Estadio Defensores del Chaco' }
+equipo8 = { nombre:     'perú',         estado: 'Estadio Nacional del Perú' }
+equipo9 = { nombre:     'uruguay',      estadio: 'Estadio Centenario' }
+equipo10 = { nombre:    'venezuela',    estado: 'Estadio Olímpico (U.C.V.)' }
