@@ -3,3 +3,4 @@ def dividirdigitos
         puts "#{n / n.to_s.length}"
     end
 end
+
