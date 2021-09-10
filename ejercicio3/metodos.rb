@@ -101,12 +101,96 @@ end
 # print generador_de_arreglos_n(largo)
 # puts
 
-puts "Ingrese el largo del arreglo"
-np = gets.chomp.to_i
-puts "Ingrese el minimo del rango"
-min = gets.chomp.to_i
-puts "Ingrese el máximo del rango"
-max = gets.chomp.to_i
+# puts "Ingrese el largo del arreglo"
+# np = gets.chomp.to_i
+# puts "Ingrese el minimo del rango"
+# min = gets.chomp.to_i
+# puts "Ingrese el máximo del rango"
+# max = gets.chomp.to_i
 
-print generador_de_arreglos_variables(np,min,max)
-puts
+# print generador_de_arreglos_variables(np,min,max)
+# puts
+
+digitos = cliente.split { n[]  
+}
+
+
+
+# Ejercicios grupo 4
+def menu
+    opcion=0
+    while opcion != 4
+    system("clear")
+    puts " Opciones del menú ".center(30,"*")
+    puts "1. Banco"
+    puts "2. Suma Interior"
+    puts "3. Capicúa"
+    puts "4. Salir"
+    puts "ingrese número de operación a realizar"
+    opcion = gets.to_i
+    if opcion == 1
+    banco()
+    elsif
+    opcion ==2
+    suma_interior()
+    elsif opcion ==3
+    capicua()
+    elsif opcion == 4
+    puts "Gracias por Preferirnos"
+    else
+    puts "Opción ingresada no existe. Presione enter"
+    gets
+    end
+    end
+    end
+    def banco
+    system("clear")
+    puts "Opción Banco"
+    puts "Ingrese Monto a retirar"
+    saldo = 120
+    monto = gets.to_f
+    if monto%5==0 and (monto+0.5) <= saldo
+    saldo -= (monto+0.5)
+    puts "Su nuevo saldo es: #{saldo}"
+    gets
+    else
+    puts "Su monto no es múltiplo de 5 o tiene saldo insuficiente"
+    puts "Su saldo es: #{saldo}"
+    gets
+    end
+    end
+    def suma_interior
+    system("clear")
+    suma = 0
+    puts "Ingrese Número"
+    digitos = gets.to_i
+    if digitos<0
+    digitos *= -1
+    digitos.digits.each do |n|
+    suma += n
+    end
+    suma *= -1
+    else
+    digitos.digits.each do |n|
+    suma += n
+    end
+    end
+    puts suma
+    puts "Presione Enter para continuar"
+    gets
+    end
+    def capicua
+    system("clear")
+    numero=""
+    revez=""
+    puts "Ingrese un Número"
+    numero = gets.to_s
+    revez = numero.reverse
+    if numero.to_i == revez.to_i
+    puts "#{revez} ¡¡¡Es Capicúa!!!"
+    else
+    puts revez
+    end
+    gets
+    end
+    menu()
