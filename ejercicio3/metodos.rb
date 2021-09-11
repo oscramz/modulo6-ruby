@@ -143,6 +143,7 @@ def menu
     end
     end
     end
+    
     def banco
     system("clear")
     puts "Opción Banco"

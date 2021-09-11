@@ -32,3 +32,6 @@ include ModuloImpresionesWeb
 
 arreglo_usuarios_con_gustos = generar_usuarios_con_gustos(5)
 imprimir_usuarios_juego(arreglo_usuarios_con_gustos)
+
+arreglo_menu_usuarios = menu_usuarios
+imprimir = menu_usuarios
