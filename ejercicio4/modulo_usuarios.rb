@@ -24,6 +24,42 @@ module ModuloInternet
     end
 end
 
+
+module ModuloMusica
+
+    def generar_bandas_musicales(m)
+        bandasmusicales = []
+        for i in 1..n
+            bandasmusicales << {nombre: Faker::Music.band, genero: Faker::Music.genero, album:Faker::Music.album}
+        end
+    return bandasmusicales
+    end
+end
+
+module ModuloJuegos
+
+    def generar_juegos(j)
+        juegos = []
+        for i in 1..j
+            juegos << {nombre: Faker::Game.title, genero: Faker::Game.genre, plataforma:Faker::Game.platform}
+        end
+    return juegos
+    end
+end
+
+module ModuloMusica
+
+    def generar_superheroes(s)
+        superheroes = []
+        for i in 1..s
+            superheroes << {nombre: Faker::Superhero.name, alias: Faker::Superhero.descriptor, poder: Faker::Superhero.power}
+        end
+    return superheroes
+    end
+end
+
+
+
 def menu_usuarios
     opcion = 0
     while opcion != 3
