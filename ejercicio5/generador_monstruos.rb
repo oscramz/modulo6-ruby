@@ -10,6 +10,7 @@ class GeneradorMonstruos
 
     def self.generar_pokemon
         return Monstruo.new(
-        Faker::Games::Pokemon.name, rand(100..150), rand(10..15))
+            Faker::Games::Pokemon.name, rand(100..150), rand(10..15)
+        )
     end
 end
