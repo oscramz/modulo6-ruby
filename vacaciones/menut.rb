@@ -1,6 +1,6 @@
 require 'faker'
 
-class Menu
+class Menut
     def self.mostrar(tamagotchi)
     opcion=0
         while opcion != 5
@@ -15,9 +15,9 @@ class Menu
         
             if opcion == 1
                 tamagotchi.manzana()
-            elsif opcion ==2
+            elsif opcion == 2
                 tamagotchi.sandia()
-            elsif opcion ==3
+            elsif opcion == 3
                 tamagotchi.pintura()
             elsif opcion == 4
                 tamagotchi.bandera()

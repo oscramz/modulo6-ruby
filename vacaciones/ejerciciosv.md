@@ -18,6 +18,7 @@ end
 class Menu
 
 end
+
 Donde la clase Cuenta deberá mantener los datos y el histórico de las transacciones y Menu se encargue de la parte gráfica con el usuario.
 
 2. Tamagotchi 👾

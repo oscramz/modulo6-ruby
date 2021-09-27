@@ -1,5 +1,5 @@
 require 'faker'
-require_relative 'menu'
+require_relative 'menut'
 
 class Tamagotchi
 
@@ -33,13 +33,21 @@ class Tamagotchi
     end
 
     def pintura()
-        @vida = (@vida + @pintura) + @accion
-        puts "#{@nombre} tiene #{@vida} de vida restante"
+        if @vida <= 0
+            puts "#{@nombre} acaba de morir tragicamente por exceso de pintura, con #{@vida} puntos de vida ❌"
+        elsif @vida > 0
+            @vida = (@vida + @pintura) + @accion
+            puts "#{@nombre} tiene #{@vida} de vida restante"
+        end
     end
 
     def bandera()
-        @vida = (@vida + @bandera) + @accion
-        puts "#{@nombre} tiene #{@vida} de vida restante"
+        if @vida <= 0
+            puts "#{@nombre} acaba de morir con por banderitis aguda, con #{@vida} puntos de vida ❌"
+        elsif @vida > 0
+            @vida = (@vida + @bandera) + @accion
+            puts "#{@nombre} tiene #{@vida} de vida restante"
+        end
     end
 
     def inicio()
@@ -49,7 +57,7 @@ class Tamagotchi
         gets
         puts "Hola soy #{@nombre} y tengo una vida de #{@vida} puntos"
         puts
-        Menu.mostrar(self)
+        Menut.mostrar(self)
     end
 end
 
